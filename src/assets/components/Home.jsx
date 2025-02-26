@@ -14,20 +14,20 @@ const Home = () => {
         <div className="overlay"></div>
         <div className="nes-container with-title is-centered welcome-container">
           <p className="title">Welcome to TechFoss'25 CTF</p>
-          <br />
           <p>
-            The ultimate battleground for tech enthusiasts! Hosted as part of
-            TechFoss 2025, our Capture The Flag (CTF) challenge is designed to
-            push your skills to the limit, testing your knowledge in
-            cryptography, reverse engineering, web security and more.
+            The ultimate battleground for cybersecurity enthusiasts! Hosted as
+            part of TechFoss 2025, our Capture The Flag (CTF) challenge is
+            designed to push your skills to the limit, testing your knowledge in
+            cryptography, reverse engineering, web security, forensics, and
+            more.
           </p>
           <p>
-            Whether you're a beginner eager to learn or a seasoned techie' ready
-            to dominate the leaderboard, Our CTF challenges you to showcase your
-            problem-solving abilities in a high-energy, competitive setting.
-            Join forces with fellow students, crack complex challenges, and
-            prove your mettle in one of the most exhilarating tech events of the
-            year!
+            Whether you're a beginner eager to learn or a seasoned hacker ready
+            to dominate the leaderboard, our CTF offers a platform to showcase
+            your problem-solving abilities in a high-energy, competitive
+            environment. Join forces with fellow cybersecurity enthusiasts,
+            crack complex challenges, and prove your mettle in one of the most
+            exhilarating tech events of the year!
           </p>
           <p>Are you ready to capture the flag? The challenge awaits!</p>
           <section>
@@ -38,14 +38,40 @@ const Home = () => {
                 document.getElementById("dialog-default").showModal()
               }
             >
-              Open dialog
+              Start
             </button>
             <dialog className="nes-dialog" id="dialog-default">
               <form method="dialog">
-                <p className="title">Dialog</p>
+                <p className="title"></p>
                 <p>Do you want to Continue?</p>
                 <menu className="dialog-menu">
                   <button className="nes-btn">Cancel</button>
+                  <button
+                    type="button"
+                    className="nes-btn is-primary"
+                    onClick={() =>
+                      document.getElementById("dialog-second").showModal()
+                    }
+                  >
+                    Continue
+                  </button>
+                </menu>
+              </form>
+            </dialog>
+            <dialog className="nes-dialog" id="dialog-second">
+              <form method="dialog">
+                <p className="title"></p>
+                <p>Ya'Sure?</p>
+                <menu className="dialog-menu-1">
+                  <button
+                    className="nes-btn"
+                    type="button"
+                    onClick={() =>
+                      document.getElementById("dialog-second").close()
+                    }
+                  >
+                    Go Back
+                  </button>
                   <a href="/tasks" className="nes-btn is-primary">
                     Start
                   </a>
