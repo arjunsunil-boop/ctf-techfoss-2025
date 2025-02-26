@@ -13,7 +13,7 @@ const Task13 = () => {
             <br />
             <p>Binary Substitution Cipher  (b=0 ,B=1)</p>
             <div class="nes-container is-rounded">
-              <p>BbBBbBBB BbBBbBBb BbBBbBbB BbBBbBBb bbbbbbBb BbBBbBBb BbBBbBbB BbBBBBBb BbBBBBBb BbBBBBBb BbBBbBBb BbBBbBbB BbBBbBBb bbbbbbBb BbBBbBBb BbBBBbBb BbBBbBbB BbBBbBBb bbbbbbBb BbBBBBBb BbBBbBBb
+              <p>BbBBbBBB BbBBbBBb BbBBbBbB BbBBbBBb BbBBBBbb BbBBbBBb BbBBbBbB BbBBBBBb BbBBBBBb BbBBBBBb BbBBbBBb BbBBbBbB BbBBbBBb BbBBBBbb BbBBbBBb BbBBBbBb BbBBbBbB BbBBbBBb BbBBBBbb BbBBBBBb BbBBbBBb
               </p>
             </div>
             <br />
