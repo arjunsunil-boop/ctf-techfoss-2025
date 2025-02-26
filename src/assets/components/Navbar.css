@@ -3,8 +3,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-color: rgb(25, 25, 25);
-  border-bottom: 4px solid rgb(209, 209, 209);
+  background-color: rgb(6, 6, 6);
+  border-bottom: 4px solid rgb(97, 97, 97);
 }
 
 .container {
