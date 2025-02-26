@@ -54,6 +54,14 @@ html, body {
   padding: 10px 90px; /* Add some padding to ensure proper spacing */
 }
 
+.dialog-menu-1{
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  gap: 10px; /* Add some space between the buttons */
+  padding: 10px 105px; /* Add some padding to ensure proper spacing */
+}
+
 .dialog-menu button{
   justify-content: center;
 }

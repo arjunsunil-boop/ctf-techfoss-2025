@@ -62,7 +62,7 @@ const Home = () => {
               <form method="dialog">
                 <p className="title"></p>
                 <p>Ya'Sure?</p>
-                <menu className="dialog-menu">
+                <menu className="dialog-menu-1">
                   <button
                     className="nes-btn"
                     type="button"
