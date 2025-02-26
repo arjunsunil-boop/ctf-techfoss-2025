@@ -3,10 +3,10 @@ import Navbar from './Navbar';
 
 const Task5 = () => {
   const handleDownload = () => {
-    const fileUrl = '/public/T5_lattitude_longitude.csv'; // Replace with your actual file path
+    const fileUrl = '/public/T5_download.zip'; // Replace with your actual file path
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'rainboltfromwish.csv';
+    link.download = 'rainboltfromwish.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
