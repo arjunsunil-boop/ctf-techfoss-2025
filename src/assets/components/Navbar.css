@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(25, 25, 25);
+  border-bottom: 4px solid rgb(209, 209, 209);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+ 
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.techfoss {
+  font-size: 10px;
+  padding-top: 30px;
+  color: yellow;
+}
+
+.capture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: yellow;
+}
+
+.capture h1 {
+  font-size: 33px;
+  margin-right: 0px;
+}
+
+.flag {
+  height: 13%;
+  width: 15%;
+  animation: flag-wave 1s infinite;
+}
+
+@keyframes flag-wave {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.hamburger-container {
+  position: relative;
+  text-align: right;
+}
+
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}

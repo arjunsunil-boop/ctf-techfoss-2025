@@ -1,38 +1,65 @@
-import React from 'react'
-import './Navbar.css'
-
+import React, { useState, useEffect } from "react";
+import "nes.css/css/nes.min.css";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    return (
-        <div>
+  const [scrollPos, setScrollPos] = useState(0);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
-            <div class="navbar-light text-black">
-                <div class="container">
-                    <nav class="navbar px-0 navbar-expand-lg navbar-dark">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-dark">
-                                    <h3 class="bold"><span class="color_danger">TECHFOSS 2025 </span><span class="color_black">CTF</span></h3>
-                                </a>
-                            </div>
-                            <div class="navbar-nav ml-auto">
-                                <a href="index.html" class="p-3 text-decoration-none text-black bold">Home</a>
-                                <a href="about.html" class="p-3 text-decoration-none text-dark bold">About</a>
-                                <a href="hackerboard.html" class="p-3 text-decoration-none text-dark bold">Hackerboard</a>
-                                <a href="login.html" class="p-3 text-decoration-none text-dark bold">Login</a>
-                                <a href="register.html" class="p-3 text-decoration-none text-dark bold">Register</a>
-                            </div>
-                        </div>
-                    </nav>
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.scrollY);
+    };
 
-                </div>
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
+  return (
+    <header className={scrollPos > 50 ? "sticky" : ""}>
+      <div className="container">
+        <div className="row">
+          <div className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div className="nav-brand">
+              <i className="snes-jp-logo brand-logo"></i>
+              <p className="techfoss">TECHFOSS'25</p>
             </div>
-
+          </div>
+          <div className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div className="capture">
+              <h1>Capture The Flag</h1>
+              <img src="/flag.png" className="flag" alt="Flag" />
+            </div>
+          </div>
+          <div
+            className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+            style={{ position: "relative", textAlign: "right" }}
+          >
+            <button className="hamburger" onClick={toggleDropdown}>
+              ☰
+            </button>
+            {dropdownVisible && (
+              <div className="dropdown">
+                <Link to="/" onClick={() => setDropdownVisible(false)}>
+                  Home
+                </Link>
+                <Link to="/tasks" onClick={() => setDropdownVisible(false)}>
+                  Tasks
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
-    )
-}
+      </div>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
