@@ -30,7 +30,7 @@ const Home = () => {
             exhilarating tech events of the year!
           </p>
           <p>Are you ready to capture the flag? The challenge awaits!</p>
-          <section>
+          <section >
             <button
               type="button"
               className="nes-btn is-primary"
@@ -40,25 +40,27 @@ const Home = () => {
             >
               Start
             </button>
-            <dialog className="nes-dialog" id="dialog-default">
-              <form method="dialog">
-                <p className="title"></p>
-                <p>Do you want to Continue?</p>
-                <menu className="dialog-menu">
-                  <button className="nes-btn">Cancel</button>
-                  <button
-                    type="button"
-                    className="nes-btn is-primary"
-                    onClick={() =>
-                      document.getElementById("dialog-second").showModal()
-                    }
-                  >
-                    Continue
-                  </button>
-                </menu>
-              </form>
-            </dialog>
-            <dialog className="nes-dialog" id="dialog-second">
+            <span className="dialog-container">
+              <dialog className="nes-dialog centered" id="dialog-default">
+                <form method="dialog">
+                  <p className="title"></p>
+                  <p>Do you want to Continue?</p>
+                  <menu className="dialog-menu">
+                    <button className="nes-btn">Cancel</button>
+                    <button
+                      type="button"
+                      className="nes-btn is-primary"
+                      onClick={() =>
+                        document.getElementById("dialog-second").showModal()
+                      }
+                    >
+                      Continue
+                    </button>
+                  </menu>
+                </form>
+              </dialog>
+            </span>
+            <dialog className="nes-dialog centered" id="dialog-second">
               <form method="dialog">
                 <p className="title"></p>
                 <p>Ya'Sure?</p>
