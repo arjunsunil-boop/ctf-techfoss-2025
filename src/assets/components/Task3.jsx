@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './Navbar';
-import './Task3.css';
+import Navbar from "./Navbar";
+import "./Task3.css";
 
 const Task3 = () => {
   const [code, setCode] = useState("");
@@ -11,14 +11,13 @@ const Task3 = () => {
 
   // Predefined inputs with expected outputs
   const testCases = [
-    { input: 153, expected: "Armstrong Number" }, 
-    { input: 1634, expected: "Armstrong Number" }, 
+    { input: 153, expected: "Armstrong Number" },
+    { input: 1634, expected: "Armstrong Number" },
     { input: 123, expected: "Not Armstrong Number" },
-    { input: 9474, expected: "Armstrong Number" }, 
-    { input: 8218, expected: "Not Armstrong Number" }, 
-    { input: 9475, expected: "Not Armstrong Number" }, 
+    { input: 9474, expected: "Armstrong Number" },
+    { input: 8218, expected: "Not Armstrong Number" },
+    { input: 9475, expected: "Not Armstrong Number" },
   ];
-
 
   useEffect(() => {
     const loadPyodideInstance = async () => {
@@ -36,9 +35,7 @@ const Task3 = () => {
       return "Pyodide is not loaded yet.";
     }
     try {
-  
       pyodide.runPython(code);
-
 
       const result = pyodide.runPython(`is_armstrong(${input})`);
 
@@ -51,7 +48,6 @@ const Task3 = () => {
       return error.message;
     }
   };
-
 
   const handleRunCode = async () => {
     setIsLoading(true);
@@ -74,8 +70,8 @@ const Task3 = () => {
       }
 
       if (allPassed) {
+        setFlag("Armstrong_Number_Unlocked");
         setOutput("All test cases passed!");
-        setFlag("Armstrong_Number_Unlocked"); 
       } else {
         setOutput(`${failedCases.length} Test cases failed`);
       }
@@ -93,15 +89,19 @@ const Task3 = () => {
         <br />
         <h1>Task 3</h1>
         <span className="nes-text">
-          Debug the provided Python code snippets, which contain intentional errors. Identify and correct all mistakes. Pass all test cases to obtain the Flag.
+          Debug the provided Python code snippets, which contain intentional
+          errors. Identify and correct all mistakes. Pass all test cases to
+          obtain the Flag.
         </span>
 
-
-
         <div className="row mt-4">
-          <div className="col">
-            <textarea className="form-control code-textarea" rows={20} placeholder="Enter your code here..." onChange={(e) => setCode(e.target.value)} 
-            defaultValue={`def is_armstrong(number):
+          <div className="col code">
+            <textarea
+              className="form-control code-textarea"
+              rows={20}
+              placeholder="Enter your code here..."
+              onChange={(e) => setCode(e.target.value)}
+              defaultValue={`def is_armstrong(number):
     if number < 0:
         return "Not Armstrong Number"
 
@@ -127,10 +127,8 @@ const Task3 = () => {
     if armstrong_sum == temp: 
         return "Armstrong Number"
     else:
-        return "Not Armstrong Number"`
-      }
-              />
-
+        return "Not Armstrong Number"`}
+            />
           </div>
         </div>
 
@@ -149,20 +147,13 @@ const Task3 = () => {
         <div className="row mt-4">
           <div className="col">
             <div className="alert alert-info output-area">
-              <pre className="output-pre">{output}</pre>
+              <pre className="output-pre">
+                {output}
+                {flag && ` Flag: ${flag}`}
+              </pre>
             </div>
           </div>
         </div>
-
-        {flag && (
-          <div className="row mt-4">
-            <div className="col">
-              <div className="alert alert-success">
-                <strong>Flag:</strong> {flag}
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
