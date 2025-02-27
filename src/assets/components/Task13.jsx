@@ -15,7 +15,7 @@ const Task13 = () => {
             <br />
             <p >b wants to be 0, while his elder brother prefers to be 1</p>
             <div class="nes-container is-rounded" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-              <p style={{ color: 'white' }}>bBbbbBBb bBbbBBbb bBbbbbbB bBbbbBBB bBbBBBBB bBbbbbBB bBbbbbbB bBbBbbbb bBbBbBbb bBbBbBbB bBbBbbBb bBbbbBbB bBbbbBbb bBbBBBBB bBbbbBBB bBbbbbbB bBbbBBbB bBbbbBbB bBbBBBBB bBbbBBBB bBbbBBBb</p>
+              <p style={{ color: 'white' }}>bBBBbBbb bBBbbBbB bBBbbbBB bBBbBbbb bBBbbBBb bBBbBBBB bBBBbbBB bBBBbbBB bbBBBBbb bBBbbbBB bBBbBbbB bBBBbBbb bBBBBbbB bBbBBBBB bBBbBBbb bBBbBbbB bBBbbBBB bBBbBbbb bBBBbBbb bBBBbbBB bbBBBBBb</p>
             </div>
             <br />
             <br />
