@@ -65,3 +65,9 @@ html, body {
 .dialog-menu button{
   justify-content: center;
 }
+
+
+.centered{
+  position: absolute;
+  margin: auto;
+}
