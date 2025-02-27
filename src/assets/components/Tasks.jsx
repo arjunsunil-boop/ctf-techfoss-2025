@@ -1,7 +1,6 @@
-// src/Tasks.js
 import React from "react";
 import { Link } from "react-router-dom";
-import './tailcss.css';
+import "./tailcss.css";
 import Navbar from "./Navbar";
 
 const Tasks = () => {
@@ -23,28 +22,35 @@ const Tasks = () => {
     { name: "Task 15", path: "/t15isjhd" },
   ];
 
+  const levels = [];
+  for (let i = 0; i < tasks.length; i += 3) {
+    levels.push(tasks.slice(i, i + 3));
+  }
+
   return (
-    <>
+    <div>
       <Navbar />
-      <div className="max-w-4xl mx-auto mt-10 px-4">
-        <h1 className="text-2xl font-semibold mb-6 text-center">All Tasks</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {tasks.map((task, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <Link
-                to={task.path}
-                className="text-lg font-medium text-blue-600 hover:underline"
-              >
-                {task.name}
-              </Link>
+      <div className="container">
+        {levels.map((level, levelIndex) => (
+          <div key={levelIndex} className="level-container mb-4">
+            <h2 className="text-left">Level {levelIndex + 1}</h2>
+            <div className="card">
+              <div className="card-body">
+                <div className="row">
+                  {level.map((task, taskIndex) => (
+                    <div key={taskIndex} className="col-md-4 mb-2">
+                      <Link to={task.path} className="btn btn-primary d-block">
+                        Go to {task.name}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
