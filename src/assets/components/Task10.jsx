@@ -6,13 +6,15 @@ import { useNavigate } from 'react-router-dom';
 const Task10 = () => {
   const navigate = useNavigate();
   const [ans, setAns] = useState('');
+  const [msg,setMsg] = useState('');
 
   const verify = () => {
-    if (ans === "//www.scrambled.com") { // Check if the answer is correct
-      navigate('/t5qrst'); // Navigate only when answer is correct
+    if ((ans === "TREASURE HACKER") || (ans === "treasure hacker")) { // Check if the answer is correct
+      setMsg(<p className='bg-green-300 text-green-600 p-2'>Correct</p>);
+      //navigate('/t5qrst'); 
     } else {
-      alert("Wrong answer! Try again.");
       setAns('');
+      setMsg(<p className='bg-red-300 text-red-600 p-2'>Try Again</p>);
     }
   };
   return (
@@ -45,6 +47,7 @@ const Task10 = () => {
           >
             Submit
           </button>
+          {msg}
         </div>
         </div>
 
