@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./tailcss.css";
+import "./tasks.css";
 import Navbar from "./Navbar";
+import "nes.css/css/nes.min.css";
 
 const Tasks = () => {
   const tasks = [
@@ -30,21 +31,26 @@ const Tasks = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="video-background">
+        <video autoPlay loop muted>
+          <source src="tasks-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="overlay"></div>
+      </div>
+      <div className="container content">
         {levels.map((level, levelIndex) => (
           <div key={levelIndex} className="level-container mb-4">
-            <h2 className="text-left">Level {levelIndex + 1}</h2>
-            <div className="card">
-              <div className="card-body">
-                <div className="row">
-                  {level.map((task, taskIndex) => (
-                    <div key={taskIndex} className="col-md-4 mb-2">
-                      <Link to={task.path} className="btn btn-primary d-block">
-                        Go to {task.name}
-                      </Link>
-                    </div>
-                  ))}
-                </div>
+            <div className="nes-container with-title">
+              <p className="title">Level {levelIndex + 1}</p>
+              <div className="row">
+                {level.map((task, taskIndex) => (
+                  <div key={taskIndex} className="col-md-4 mb-2">
+                    <Link to={task.path} className="nes-btn is-primary d-block">
+                      {task.name}
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
