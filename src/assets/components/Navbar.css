@@ -2,9 +2,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  background-color: rgb(25, 25, 25);
-  border-bottom: 4px solid rgb(209, 209, 209);
+  padding: 24px;
+  background-color: rgb(6, 6, 6);
+  border-bottom: 4px solid rgb(97, 97, 97);
 }
 
 .container {
@@ -21,9 +21,10 @@ header {
 }
 
 .techfoss {
-  font-size: 10px;
+  font-size: 14px;
   padding-top: 30px;
-  color: yellow;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .capture {
@@ -32,23 +33,27 @@ header {
   align-items: center;
   text-align: center;
   color: yellow;
+  padding-left: 33px;
 }
 
+
 .capture h1 {
-  font-size: 33px;
+  font-size: 30px;
   margin-right: 0px;
 }
 
+
 .flag {
-  height: 13%;
+  height: 15%;
   width: 15%;
+
   animation: flag-wave 1s infinite;
 }
 
 @keyframes flag-wave {
-  0% { transform: translateY(0); }
+  0% { transform: translateY(5px); }
   50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  100% { transform: translateY(5px); }
 }
 
 .hamburger-container {
@@ -57,7 +62,7 @@ header {
 }
 
 .hamburger {
-  font-size: 24px;
+  font-size: 37.5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -83,4 +88,15 @@ header {
 
 .dropdown a:hover {
   background-color: #f0f0f0;
+}
+
+
+.no-underline {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+.no-underline:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: inherit; /* Ensure no color change on hover */
 }

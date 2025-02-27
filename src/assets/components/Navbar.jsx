@@ -29,7 +29,10 @@ const Navbar = () => {
           <div className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <div className="nav-brand">
               <i className="snes-jp-logo brand-logo"></i>
-              <p className="techfoss">TECHFOSS'25</p>
+              <Link to="/" className="no-underline">
+  <p className="techfoss">TECHFOSS'25</p>
+</Link>
+               
             </div>
           </div>
           <div className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">

@@ -29,7 +29,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/tasks" element={<Tasks/>}/>
-      <Route path="/t1abcdt1abcd" element={<Task1/>}/>
+      <Route path="/t1abcd" element={<Task1/>}/>
       <Route path="/t2efgh" element={<Task2/>}/>
       <Route path="/t3hijk" element={<Task3/>}/>
       <Route path="/t4lmnop" element={<Task4/>}/>
