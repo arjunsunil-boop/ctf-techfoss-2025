@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+#task4bg{
+    /* Retro Pixel Pattern Background */
+    background-image: url(/public/orig.gif);
+    background-repeat: repeat;
+    background-size: cover;
+    /* Ensure it covers the whole desktop screen */
+    min-height: 100vh;
+    margin: 0;
+  }
+
+#task9bg{
+    background: url(/public/binary.gif);
+    background-repeat: none;
+    background-size:cover;
+    min-height: 100vh;
+}
