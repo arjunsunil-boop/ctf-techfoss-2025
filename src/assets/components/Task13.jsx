@@ -13,7 +13,7 @@ const Task13 = () => {
             <br />
             <h1 >Task 13</h1>
             <br />
-            <p >Binary Substitution Cipher  (b=0,B=1)</p>
+            <p >b wants to be 0, while his elder brother prefers to be 1</p>
             <div class="nes-container is-rounded" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
               <p style={{ color: 'white' }}>bBbbbBBb bBbbBBbb bBbbbbbB bBbbbBBB bBbBBBBB bBbbbbBB bBbbbbbB bBbBbbbb bBbBbBbb bBbBbBbB bBbBbbBb bBbbbBbB bBbbbBbb bBbBBBBB bBbbbBBB bBbbbbbB bBbbBBbB bBbbbBbB bBbBBBBB bBbbBBBB bBbbBBBb</p>
             </div>
