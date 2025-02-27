@@ -1,36 +1,47 @@
-/* Code Textarea */
-.code-textarea {
-    font-family: monospace; /* Use a monospace font */
-    font-size: 14px; /* Adjust font size as needed */
-    background-color: #f0f0f0; /* Light background color */
-    border: 1px solid #ccc; /* Add a border */
-    padding: 10px; /* Add some padding */
-    resize: vertical; /* Allow vertical resizing */
-}
-
-/* Input Textarea */
-.input-textarea {
-    font-family: monospace;
+/* Task3.css */
+.container {
+    padding: 20px;
+  }
+  
+  .code-textarea {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 10px;
     resize: vertical;
-}
-
-/* Output Area */
-.output-area {
-    background-color: #282c34; /* Darker background for output */
-    color: #e6e6e6; /* Light text color */
+    height: 300px;
+  }
+  
+  .output-area {
+    background-color: #282c34;
+    color: #e6e6e6;
     padding: 10px;
     border: 1px solid #ccc;
-    overflow: auto; /* Add scrollbars if content overflows */
-    white-space: pre-wrap; /* Preserve whitespace and wrap text */
-}
-
-.output-pre {
-    font-family: monospace;
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+  
+  .output-pre {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    margin: 0; /* Remove default pre margins */
-    white-space: pre-wrap; /* Important: Preserve whitespace and wrap */
-}
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
