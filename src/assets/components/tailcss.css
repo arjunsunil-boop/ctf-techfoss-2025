@@ -16,3 +16,8 @@
     background-size:cover;
     min-height: 100vh;
 }
+#task12bg{
+  background: url(/public/T12-background.png);
+  background-repeat: none;
+  background-size:cover;  
+}
