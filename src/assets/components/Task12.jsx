@@ -60,7 +60,7 @@ const Task12 = () => {
               className='bg-red-500 p-2 text-yellow-300'
               onClick={verify}
             >
-              Check
+              Submit
             </button>
 
 
