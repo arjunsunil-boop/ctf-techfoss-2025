@@ -26,7 +26,7 @@ const Task12 = () => {
   };
 
   const handleNext = () => {
-    navigate('/t13mkvkd');
+    navigate('/t11hdhsj');
   };
 
   return (
