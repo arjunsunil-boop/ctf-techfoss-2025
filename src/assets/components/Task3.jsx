@@ -70,8 +70,8 @@ const Task3 = () => {
       }
 
       if (allPassed) {
-        setFlag("Armstrong_Number_Unlocked");
-        setOutput("All test cases passed!");
+        setFlag(import.meta.env.VITE_Task3);
+        setOutput(" ");
       } else {
         setOutput(`${failedCases.length} Test cases failed`);
       }
@@ -86,7 +86,7 @@ const Task3 = () => {
     <div>
       <Navbar />
       <div className="container">
-        <br />
+       
         <h1>Task 3</h1>
         <span className="nes-text">
           Debug the provided Python code snippets, which contain intentional
@@ -144,16 +144,19 @@ const Task3 = () => {
           </div>
         </div>
 
+        {output &&
         <div className="row mt-4">
           <div className="col">
-            <div className="alert alert-info output-area">
+            <div className="nes-container is-rounded is-dark">
               <pre className="output-pre">
                 {output}
                 {flag && ` Flag: ${flag}`}
               </pre>
             </div>
           </div>
-        </div>
+        </div>}
+
+
       </div>
     </div>
   );
