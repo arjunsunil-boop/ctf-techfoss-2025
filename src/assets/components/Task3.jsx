@@ -70,7 +70,7 @@ const Task3 = () => {
       }
 
       if (allPassed) {
-        setFlag(import.meta.env.VITE_Task3);
+        setFlag(import.meta.env.VITE_task3);
         setOutput(" ");
       } else {
         setOutput(`${failedCases.length} Test cases failed`);
