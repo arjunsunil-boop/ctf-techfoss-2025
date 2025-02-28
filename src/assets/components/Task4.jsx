@@ -27,7 +27,7 @@ const Task4 = () => {
   };
 
   const handleNext = () => {
-    navigate('/t5qrst');
+    navigate('/t2efgh');
   };
 
 
