@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./tasks.css";
+import "./Tasks.css";
 import Navbar from "./Navbar";
 import "nes.css/css/nes.min.css";
 
