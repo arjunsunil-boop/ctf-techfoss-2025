@@ -10,14 +10,9 @@ const Task7 = () => {
     setFruit({ ...fruit, [event.target.name]: event.target.value });
   }
 
-  const correctFruits = ["rambutan", "passionfruit", "blueberry", "jackfruit", "avocado"];
-  const fruitFlags = {
-    rambutan: "techfoss<rambutan_abcd>",
-    passionfruit: "techfoss<passionfruit_efgh>",
-    blueberry: "techfoss<blueberry_ashdh>",
-    jackfruit: "techfoss<jackfruit_asdsad>",
-    avocado: "techfoss<avocado_jsdhe>"
-  };
+
+  const tasks = JSON.parse(import.meta.env.VITE_task7);
+
 
   const checkFruit = (event) => {
     event.preventDefault();
@@ -25,20 +20,30 @@ const Task7 = () => {
       return;
     }
 
-    const userFruits = fruit.fruits.split('\n').map(f => f.trim().toLowerCase());
+    const userFruits = fruit.fruits.toLowerCase();
 
-    userFruits.forEach(fruit => {
-      if (fruit === "") {
-        setDialogMessage("Please enter a valid fruit name.");
-      } else if (fruitFlags[fruit]) {
-        setDialogMessage(`Correct! Here is your flag: ${fruitFlags[fruit]}`);
+
+
+    try {
+      if (tasks[userFruits]===undefined) {
+
+        setDialogMessage(`Try again!`)
+        
       } else {
-        setDialogMessage("Incorrect. Please try again.");
+
+        setDialogMessage(`Your flag is ${tasks[userFruits]}`)
+        
       }
       document.getElementById('dialog-default').showModal();
-    });
+      
+    } catch (error) {
+      console.log(error)
+    }
 
-    console.log(fruit);
+    
+
+    
+
   }
 
   return (
@@ -95,8 +100,8 @@ const Task7 = () => {
         <section>
           <dialog className="nes-dialog centered" id="dialog-default">
             <form method="dialog">
-              <p className="title">Dialog</p>
-              <p>{dialogMessage}</p>
+              <p className="title"></p>
+              <p style={{textAlign:'center'}}>{dialogMessage}</p>
               <menu className="dialog-menu">
                 <button className="nes-btn">Close</button>
               </menu>
