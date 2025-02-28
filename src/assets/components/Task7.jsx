@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Navbar from "./Navbar";
+import { useNavigate } from 'react-router-dom';
 
 const Task7 = () => {
   const image = '/fruits.jpg'
   const [fruit, setFruit] = useState({ fruits: "" });
   const [dialogMessage, setDialogMessage] = useState("");
+  const navigate = useNavigate();
 
   const fruitHandle = (event) => {
     setFruit({ ...fruit, [event.target.name]: event.target.value });
@@ -76,7 +78,7 @@ const Task7 = () => {
                 </p>
                 <a href="https://aravind-b-kumar.github.io/Hidden-Fruits-CTF/" target='/blank'>
                   <div className="nes-container is-rounded" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                    <p style={{ color: 'white' }}>https://aravind-b-kumar.github.io/Hidden-Fruits-CTF/</p>
+                    <p style={{ color: 'white' }}>Click me to go to the website</p>
                   </div></a>
               </div>
               <div className="col col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
@@ -90,9 +92,10 @@ const Task7 = () => {
                   <a type="button" className="nes-btn is-success" href='' style={{ marginTop: '20px' }} onClick={checkFruit}>Eat!</a>
                 </div>
               </div>
-              <div className="col col-12">
-                <a type="button" className="nes-btn is-error" href='' target='/blank' style={{ marginTop: '20px' }}>Flag Submission</a>
-              </div>
+              <div className='flex items-center gap-4'>
+              <a type="button" className="nes-btn is-error" href='https://forms.gle/ooaq2gmeiLjRoWWt8' target='/blank'>Submission</a>
+              <button type='submit' className='nes-btn bg-red-300 text-red-700 ml-8 py-2 px-8' onClick={() => { navigate('/t5qrst') }}>Next</button>
+            </div>
               <div className="col col-12"></div>
             </div>
           </div>

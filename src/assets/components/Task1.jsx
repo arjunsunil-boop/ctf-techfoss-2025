@@ -5,9 +5,6 @@ import { useNavigate } from 'react-router-dom'
 const Task1 = () => {
   const navigate = useNavigate();
   const image = '/bgt1.jpg';
-  const verify=()=>{
-    navigate('/t2efgh')
-  }
 
   return (
     <div className='h-screen'>
@@ -51,13 +48,9 @@ const Task1 = () => {
                   </div>
                 </div>
 
-                <div className="col col-12 mr-16">
-
-                  <a href="https://www.google.com" target='/blank'>
-                    <button type="button" className="nes-btn is-primary">Submission</button>
-
-                  </a>
-                  {/* <button className='bg-red-400 text-red-700 p-2 ml-4' type='button' onClick={verify()}>Next</button> */}
+                <div className='flex items-center gap-4'>
+                  <a type="button" className="nes-btn is-primary" href='https://forms.gle/ooaq2gmeiLjRoWWt8' target='/blank'>Submission</a>
+                  <button type='submit' className='nes-btn bg-red-300 text-red-700 ml-8 py-2 px-8' onClick={() => { navigate('/t7abcde') }}>Next</button>
                 </div>
               </div>
             </div>
