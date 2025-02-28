@@ -60,3 +60,7 @@
   background-size: cover;
 }
 
+#task1bg{
+  background-image: url(/public/task1bg.gif);
+  background-size: cover;
+}
