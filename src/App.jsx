@@ -29,21 +29,21 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/tasks" element={<Tasks/>}/>
-      <Route path="/t1abcd" element={<Task1/>}/>
+      <Route path="/t1abcd" element={<Task4/>}/>
       <Route path="/t2efgh" element={<Task2/>}/>
       <Route path="/t3hijk" element={<Task3/>}/>
-      <Route path="/t4lmnop" element={<Task4/>}/>
-      <Route path="/t5qrst" element={<Task5/>}/>
-      <Route path="/t6uvwx" element={<Task6/>}/>
-      <Route path="/t7abcde" element={<Task7/>}/>
+      <Route path="/t4lmnop" element={<Task7/>}/>
+      <Route path="/t5qrst" element={<Task6/>}/>
+      <Route path="/t6uvwx" element={<Task1/>}/>
+      <Route path="/t7abcde" element={<Task14/>}/>
       <Route path="/t8fghij" element={<Task8/>}/>
       <Route path="/t9klmno" element={<Task9/>}/>
-      <Route path="/t10pqrst" element={<Task10/>}/>
-      <Route path="/t11hdhsj" element={<Task11/>}/>
-      <Route path="/t12ksjks" element={<Task12/>}/>
+      <Route path="/t10pqrst" element={<Task12/>}/>
+      <Route path="/t11hdhsj" element={<Task10/>}/>
+      <Route path="/t12ksjks" element={<Task11/>}/>
       <Route path="/t13mkvkd" element={<Task13/>}/>
-      <Route path="/t14kjssf" element={<Task14/>}/>
-      <Route path="/t15isjhd" element={<Task15/>}/>
+      <Route path="/t14kjssf" element={<Task15/>}/>
+      <Route path="/t15isjhd" element={<Task5/>}/>
 
     </Routes>
     </BrowserRouter>

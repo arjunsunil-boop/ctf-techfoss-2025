@@ -17,29 +17,33 @@ const Task5 = () => {
     window.open(formUrl);
   };
   return (
-    <div>        
+    <div>
       <Navbar />
-      <div className="container">  
-      <img
-      src='/public/T5-map-bg.png'
-      alt="background"
-      style={{ 
-        position: "absolute",
-        top: 100,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
-        zIndex: -1,
-        filter: "blur(1px)",
-        opacity: 0.85,
-      }} 
-      />    
-     
+      <div className="container">
+        <img
+          src='/public/T5-map-bg.png'
+          alt="background"
+          style={{
+            position: "absolute",
+            top: 100,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: -1,
+            filter: "blur(1px)",
+            opacity: 0.85,
+          }}
+        />
+
         <br></br>
-        <h1 color='white'>
-          Task 5
-        </h1>
+        <p class="nes-badge block h-16 ">
+          <span class="is-dark ">Task 15</span>
+        </p>
+
+        {/* <h1 style={{ color: 'red' }} >
+          Task 15
+        </h1> */}
         <br></br>
         <p className='nes-balloon from-left'>
           The coordinates whisper in rows and columns, awaiting the cartographer’s touch
@@ -57,13 +61,13 @@ const Task5 = () => {
           onClick={handleSubmit}
         >
           Submission
-        </button>    
+        </button>
 
       </div>
       <div className="position-absolute bottom-0 end-0">
         <i className='nes-icon is-large star is-half'></i>
       </div>
-      <div className="position-absolute bottom-0 end-0">        
+      <div className="position-absolute bottom-0 end-0">
         <i className='nes-icon is-large star '></i>
         <i className='nes-icon is-large star'></i>
         <i className='nes-icon is-large star'></i>

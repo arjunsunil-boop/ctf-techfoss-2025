@@ -9,7 +9,7 @@ const Task14 = () => {
       <div>
       <div className="container">
         <br />
-        <h1 >Task</h1>
+        <h1 >Task 7</h1>
         <br />
         <div className="row">
           <div className="col-12 col sm-12 col md-12 col lg-12 col xl-12 col-xxl-12">

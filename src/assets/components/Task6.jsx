@@ -9,7 +9,7 @@ const Task6 = () => {
       <Navbar />
       <div className="container">
         <br />
-        <h1>Task</h1>
+        <h1>Task 5</h1>
         <br />
         <div className="row g-3">
           <div className="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col-xxl-12">

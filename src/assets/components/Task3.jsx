@@ -91,8 +91,11 @@ const Task3 = () => {
         <span className="nes-text">
           Debug the provided Python code snippets, which contain intentional
           errors. Identify and correct all mistakes. Pass all test cases to
-          obtain the Flag.
+          obtain the Flag. <br/><br/>
+          Hint: There are 4 errors in the code
         </span>
+
+        
 
         <div className="row mt-4">
           <div className="col code">

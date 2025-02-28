@@ -36,7 +36,7 @@ const Task15 = () => {
           }} />
         <br />
         <h1 className='nes-text is-disabled'>
-          Task 15
+          Task 14
         </h1>
         <br />
         <p className='nes-balloon from-left'>
