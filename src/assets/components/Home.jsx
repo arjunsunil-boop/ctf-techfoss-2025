@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "./Home.css";
-import Load from "./load";
+import Load from "./Load";
 
 const Home = () => {
   const [loading, setLoading] = useState(false); // Controls loading state
