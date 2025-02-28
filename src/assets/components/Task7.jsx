@@ -25,24 +25,24 @@ const Task7 = () => {
 
 
     try {
-      if (tasks[userFruits]===undefined) {
+      if (tasks[userFruits] === undefined) {
 
         setDialogMessage(`Try again!`)
-        
+
       } else {
 
         setDialogMessage(`Your flag is ${tasks[userFruits]}`)
-        
+
       }
       document.getElementById('dialog-default').showModal();
-      
+
     } catch (error) {
       console.log(error)
     }
 
-    
 
-    
+
+
 
   }
 
@@ -65,7 +65,7 @@ const Task7 = () => {
 
       <div className="container">
         <br />
-        <h1 style={{color:'#eeeeee'}}>Task 7 </h1>
+        <h1 style={{ color: '#eeeeee' }}>Task 7 </h1>
         <br />
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -74,15 +74,16 @@ const Task7 = () => {
                 <p className="nes-balloon from-left nes-pointer">
                   Find the FIVE fruits I like!!
                 </p>
-                <div className="nes-container is-rounded" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                  <p style={{ color: 'white' }}>https://aravind-b-kumar.github.io/Hidden-Fruits-CTF/</p>
-                </div>
+                <a href="https://aravind-b-kumar.github.io/Hidden-Fruits-CTF/" target='/blank'>
+                  <div className="nes-container is-rounded" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                    <p style={{ color: 'white' }}>https://aravind-b-kumar.github.io/Hidden-Fruits-CTF/</p>
+                  </div></a>
               </div>
               <div className="col col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
                 {/* for gap */}
               </div>
               <div className="col col-12">
-                <div className="nes-container with-title is-centered"  style={{ backgroundColor: 'rgb(241, 241, 241)' }}>
+                <div className="nes-container with-title is-centered" style={{ backgroundColor: 'rgb(241, 241, 241)' }}>
                   <p className="title">Enter Here</p>
 
                   <input type="text" id="name_field" class="nes-input" name='fruits' value={fruit.fruits} onChange={fruitHandle} placeholder="fruit_name"></input>
@@ -90,7 +91,7 @@ const Task7 = () => {
                 </div>
               </div>
               <div className="col col-12">
-                <a type="button" className="nes-btn is-error" href='' style={{ marginTop: '20px' }}>Flag Submission</a>
+                <a type="button" className="nes-btn is-error" href='' target='/blank' style={{ marginTop: '20px' }}>Flag Submission</a>
               </div>
               <div className="col col-12"></div>
             </div>
@@ -101,7 +102,7 @@ const Task7 = () => {
           <dialog className="nes-dialog centered" id="dialog-default">
             <form method="dialog">
               <p className="title"></p>
-              <p style={{textAlign:'center'}}>{dialogMessage}</p>
+              <p style={{ textAlign: 'center' }}>{dialogMessage}</p>
               <menu className="dialog-menu">
                 <button className="nes-btn">Close</button>
               </menu>
