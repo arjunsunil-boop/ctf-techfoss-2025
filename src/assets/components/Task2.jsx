@@ -17,7 +17,7 @@ const Task2 = () => {
               Inspect closely; the layers of truth might surprise you.
             </p>
             <br />
-            <a type="button" className="nes-btn is-primary" href="https://drive.google.com/file/d/1ob9wSaRXdeChmbaAKVJ48Fr4367ihRxF/view?usp=sharing">Download File</a>
+            <a type="button" className="nes-btn is-primary" href="https://drive.google.com/file/d/1ob9wSaRXdeChmbaAKVJ48Fr4367ihRxF/view?usp=sharing" target="_blank">Download File</a>
             <br />
             <br />
             <a type="button" className="nes-btn is-success" href='' target='/blank'>Submission</a>
