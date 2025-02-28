@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import "./Task3.css";
+import { useNavigate } from "react-router-dom";
 
 const Task3 = () => {
   const [code, setCode] = useState("");
@@ -8,6 +9,8 @@ const Task3 = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [pyodide, setPyodide] = useState(null);
   const [flag, setFlag] = useState(""); // To store the flag if all test cases pass
+
+  const navigate = useNavigate();
 
   // Predefined inputs with expected outputs
   const testCases = [
@@ -144,6 +147,7 @@ const Task3 = () => {
             >
               {isLoading ? "Running..." : "Run Code"}
             </button>
+            
           </div>
         </div>
 
@@ -158,6 +162,11 @@ const Task3 = () => {
             </div>
           </div>
         </div>}
+          
+        <div className='flex items-center gap-4'>
+              <a type="button" className="nes-btn is-success" href='https://forms.gle/He1jh5TWs1jN9ha6A' target='/blank'>Submission</a>
+              <button type='submit' className='nes-btn bg-red-300 text-red-700 ml-8 py-2 px-8' onClick={() => { navigate('/t4lmnop') }}>Next</button>
+            </div>
 
 
       </div>

@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const Task5 = () => {
   const handleDownload = () => {
-    const fileUrl = '/public/T5_download.zip'; // Replace with your actual file path
+    const fileUrl = '/public/T5_download.zip'; 
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'rainboltfromwish.zip';
@@ -13,7 +13,7 @@ const Task5 = () => {
   };
 
   const handleSubmit = () => {
-    const formUrl = ''; // Replace with Gform URL
+    const formUrl = ''; 
     window.open(formUrl);
   };
   return (
