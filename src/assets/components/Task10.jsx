@@ -25,7 +25,7 @@ const Task10 = () => {
   };
   return (
     <div className='h-screen'>
-      <Navbar />
+      <Navbar/>
       <div className='container h-full py-8' id='task10bg'>
         <h1 className=' '>Task 11</h1>
 
