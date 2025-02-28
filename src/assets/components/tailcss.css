@@ -2,7 +2,7 @@
 
 #task4bg{
     /* Retro Pixel Pattern Background */
-    background-image: url(/public/orig.gif);
+    background-image: url(/orig.gif);
     background-repeat: repeat;
     background-size: cover;
     /* Ensure it covers the whole desktop screen */
@@ -11,20 +11,20 @@
   }
 
 #task9bg{
-    background: url(/public/binary.gif);
+    background: url(/binary.gif);
     background-repeat: none;
     background-size:cover;
     min-height: 100vh;
 }
 
 #task12bg{
-  background: url(/public/T12-background.png);
+  background: url(/T12-background.png);
   background-repeat: none;
   background-size:cover;  
 }
 
 #task10bg{
-  background:url(/public/mbg.png);
+  background:url(/mbg.png);
   background-size: contain;
 }
 
@@ -56,11 +56,11 @@
 
 #loadbg{
   background-color: black;
-  background-image: url(/public/bgload.gif);
+  background-image: url(/bgload.gif);
   background-size: cover;
 }
 
 #task1bg{
-  background-image: url(/public/task1bg.gif);
+  background-image: url(/task1bg.gif);
   background-size: cover;
 }

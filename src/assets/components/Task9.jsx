@@ -10,19 +10,25 @@ const Task9 = () => {
   const navigate = useNavigate();
 
 
-  var FLAG = 'techfoss<HERLON>';
+
+  const tasks = JSON.parse(import.meta.env.VITE_task9);
+
 
   const verify = () => {
-    if (ans === '4') {
-      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
-      setShowNext(true);
-    } else {
+    if (tasks[ans]===undefined) {
+
+
       setAns('');
       setMessage(<div className="bg-red-200 text-red-700 p-2 mt-2">Wrong Password!</div>);
       setTimeout(() => {
         setMessage('');
       }, 2000);
       setShowNext(false);
+    } else {
+
+      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
+      setShowNext(true);
+
     }
   };
 
@@ -47,12 +53,12 @@ const Task9 = () => {
             ANDed it with 7<br />
             ORed it with 12<br />
             The final result is 15.<br />
-            8 {'>'} X {'>'} 0 
+            8 {'>'} X {'>'} 0
           </p>
           <p className='text-yellow-300'>What was my original number <strong className='text-red-500'>X</strong>?</p>
 
           <div className='flex items-center gap-4 '>
-            
+
             <input
               type="text"
               id="answer"
@@ -72,20 +78,23 @@ const Task9 = () => {
           {showNext && (
             <div className='py-8 px-2 flex gap-4'>
 
-              <div className="bg-green-100 text-green-700 p-2">flag: {FLAG}</div>
-              <button
-                type="button"
-                className='bg-purple-500 p-2 text-yellow-300'
-                onClick={handleNext}  // Call verify function correctly
-              >
-                Next Task
-              </button>
+              <div className="bg-green-100 text-green-700 p-2">flag: {tasks[ans]}</div>
+
 
 
             </div>
           )}
         </div>
+        <button
+          type="button"
+          className='w-24 bg-purple-500 ml-8 py-2 px-2 text-yellow-300'
+          onClick={handleNext}  // Call verify function correctly
+        >
+          Next
+        </button>
+
       </div>
+
     </div>
   );
 };
