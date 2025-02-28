@@ -8,14 +8,20 @@ const Task10 = () => {
   const [ans, setAns] = useState('');
   const [msg,setMsg] = useState('');
 
+  const tasks = JSON.parse(import.meta.env.VITE_task11);
+
+
   const verify = () => {
-    if ((ans === "TREASURE HACKER") || (ans === "treasure hacker")) { // Check if the answer is correct
-      setMsg(<p className='bg-green-300 text-green-600 p-2'>Correct</p>);
-      //navigate('/t5qrst'); 
-    } else {
+    if (tasks[ans]===undefined) {
       setAns('');
       setMsg(<p className='bg-red-300 text-red-600 p-2'>Try Again</p>);
+    } else {
+
+      setMsg(<p className='bg-green-300 text-black-600 p-2'>Your Flag is {tasks[ans]}</p>)
+      
+      
     }
+
   };
   return (
     <div className='h-screen'>
