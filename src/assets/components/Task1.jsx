@@ -29,7 +29,7 @@ const Task1 = () => {
       <div id='task1bg' className='h-full'>
         <div className="container">
           <br />
-          <h1 style={{ color: '#eeeeee' }}>Task </h1>
+          <h1 style={{ color: '#eeeeee' }}>Task 6</h1>
           <br />
           <div className="row">
             <div className="col-12 col sm-12 col md-12 col lg-12 col-xl-12 col-xxl-12">

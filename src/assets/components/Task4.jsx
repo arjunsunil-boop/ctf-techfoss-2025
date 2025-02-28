@@ -37,7 +37,7 @@ const Task4 = () => {
       <Navbar />
 
       <div className='container p-12'>
-        <h2 className='text-md text-white'>Task 4</h2>
+        <h2 className='text-md text-white'>Task 1</h2>
         <div className='mt-16 w-3/4'>
           <p className='nes-balloon from-left nes-pointer'>
             Sometimes, the next clue is hidden in plain sight<br />—just reversed.
