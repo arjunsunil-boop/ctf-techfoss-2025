@@ -60,7 +60,7 @@ const Task12 = () => {
               className='bg-red-500 p-2 text-yellow-300'
               onClick={verify}
             >
-              Submit
+              Check
             </button>
 
 
@@ -80,11 +80,16 @@ const Task12 = () => {
                 >
                   Next Task
                 </button>
-
+                
+               
 
               </div>
             )}
           </div>
+          <a href="https://forms.gle/YEcRMMWpnZTV1VrA7" target='/blank'>
+                    <button type="button" className="nes-btn is-primary">Submission</button>
+
+                  </a>
 
         </div>
       </div>
