@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Task15 = () => {
   const handleDownload = () => {
-    const fileUrl = 'public/T15-download.png'; // Replace with your actual file path
+    const fileUrl = '/T15-download.png'; // Replace with your actual file path
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'wrongmacca.png';
