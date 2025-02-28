@@ -20,6 +20,8 @@ const Task10 = () => {
       setMsg(<p className='bg-green-300 text-black-600 p-2'>Your Flag is {tasks[ans]}</p>)
 
 
+      
+
     }
 
   };
