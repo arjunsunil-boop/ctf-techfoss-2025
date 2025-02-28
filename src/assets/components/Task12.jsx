@@ -42,8 +42,8 @@ const Task12 = () => {
           <p className="nes-balloon from-left nes-pointer">
             Welcome to the lab. It appears the computers are locked . To gain access, you need to enter the correct password.
             <br />
-            <br />
-            Hint: Consider the passwords that are frequently used at our institution.
+            
+            
           </p>
 
           <div className='py-8 px-2 flex gap-4'>

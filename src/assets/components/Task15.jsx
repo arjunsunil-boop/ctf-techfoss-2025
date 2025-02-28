@@ -33,6 +33,8 @@ const Task15 = () => {
             zIndex: -1,
             filter: "",
             opacity: 1,
+            filter : "brightness(50%)"
+            
           }} />
         <br />
         <h1 className='nes-text is-disabled'>
