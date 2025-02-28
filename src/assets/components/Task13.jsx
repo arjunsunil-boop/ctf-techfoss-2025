@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { useNavigate } from 'react-router-dom';
 
 const Task13 = () => {
   const backgroundImageUrl = '/binarycipher.jpg';
+    const navigate = useNavigate();
 
   return (
     <div style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
@@ -19,7 +21,10 @@ const Task13 = () => {
             </div>
             <br />
             <br />
-            <a type="button" class="nes-btn is-success" href=''>Submission</a>
+            <div className='flex items-center gap-4'>
+            <a type="button" class="nes-btn is-success" href='https://forms.gle/dnHxQF5JWfhVVzC97' target='blank'>Submission</a>
+            <button type='submit' className='nes-btn bg-red-300 text-red-700 ml-8 py-2 px-8' onClick={() => { navigate('/t14kjssf') }}>Next</button>
+            </div>
           </div>
         </div>
       </div>
