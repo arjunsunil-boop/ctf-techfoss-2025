@@ -34,7 +34,7 @@ const Task6 = () => {
             <p></p>
 
             <div class="nes-container is-rounded is-dark">
-              <p>myyux://xmtwyzwq.fy/SZusq</p>
+              <p>myyux://ngg.ht/kePkIgRy</p>
             </div>
 
 
