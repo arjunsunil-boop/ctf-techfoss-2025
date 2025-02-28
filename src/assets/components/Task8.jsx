@@ -20,12 +20,13 @@ const Task15 = () => {
     <div style={{ backgroundColor: '#0000ff', height: '100vh', margin: 0, padding: 0  }}>
       <Navbar />
       <div className="container " >
+        
       <img
       src='/public/T8-bg.gif'
       alt="background"
       style={{ 
         position: "absolute",
-        top: 220,
+        top: 270,
         left: 310,
         width: "900px",
         height: "600px",
@@ -36,7 +37,7 @@ const Task15 = () => {
       }} 
       />   
         <br/>
-        <h1 className='nes-text is-disabled'>
+        <h1 className='nes-text is-disabled'style={{zIndex:3,position:'relative'}}>
           Task 8
         </h1>
         <br />
