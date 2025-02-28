@@ -21,7 +21,7 @@ const Task5 = () => {
       <Navbar />
       <div className="container">
         <img
-          src='/public/T5-map-bg.png'
+          src='/T5-map-bg.png'
           alt="background"
           style={{
             position: "absolute",
