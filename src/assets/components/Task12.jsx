@@ -80,11 +80,16 @@ const Task12 = () => {
                 >
                   Next Task
                 </button>
-
+                
+               
 
               </div>
             )}
           </div>
+          <a href="https://forms.gle/YEcRMMWpnZTV1VrA7" target='/blank'>
+                    <button type="button" className="nes-btn is-primary">Submission</button>
+
+                  </a>
 
         </div>
       </div>
