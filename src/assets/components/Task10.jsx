@@ -6,19 +6,18 @@ import { useNavigate } from 'react-router-dom';
 const Task10 = () => {
   const navigate = useNavigate();
   const [ans, setAns] = useState('');
-  const [msg, setMsg] = useState('');
+  const [msg,setMsg] = useState('');
 
   const tasks = JSON.parse(import.meta.env.VITE_task11);
 
 
   const verify = () => {
-    if (tasks[ans] === undefined) {
+    if (tasks[ans]===undefined) {
       setAns('');
       setMsg(<p className='bg-red-300 text-red-600 p-2'>Try Again</p>);
     } else {
 
       setMsg(<p className='bg-green-300 text-black-600 p-2'>Your Flag is {tasks[ans]}</p>)
-
 
 
     }
