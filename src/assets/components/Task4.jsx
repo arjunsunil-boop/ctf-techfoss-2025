@@ -28,6 +28,8 @@ const Task4 = () => {
 
   const handleNext = () => {
     navigate('/t2efgh');
+    window.open("https://forms.gle/He1jh5TWs1jN9ha6A");
+
   };
 
 
