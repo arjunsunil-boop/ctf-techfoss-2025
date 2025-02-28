@@ -9,19 +9,19 @@ const Task12 = () => {
   const [showNext, setShowNext] = useState(false);
   const navigate = useNavigate();
 
-  var FLAG = 'TISTIAN';
-
+  var flag = JSON.parse(import.meta.env.VITE_task12);
   const verify = () => {
-    if (ans === 'tist') {
-      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
-      setShowNext(true);
-    } else {
+    if (flag[ans]===undefined) {
       setAns('');
       setMessage(<div className="bg-red-200 text-red-700 p-2 mt-2">Wrong Password!</div>);
       setTimeout(() => {
         setMessage('');
       }, 2000);
       setShowNext(false);
+
+    } else {
+      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
+      setShowNext(true);
     }
   };
 
@@ -48,14 +48,14 @@ const Task12 = () => {
               type="password"
               id="answer"
               value={ans}
-              onChange={(e) => setAns(e.target.value)}  // Update state on input change
+              onChange={(e) => setAns(e.target.value.toLowerCase())}  
               className='bg-white p-2 '
             />
 
             <button
               type="button"
               className='bg-red-500 p-2 text-yellow-300'
-              onClick={verify}  // Call verify function correctly
+              onClick={verify}  
             >
               Submit
             </button>
@@ -69,11 +69,11 @@ const Task12 = () => {
             {showNext && (
               <div className='py-8 px-2 flex gap-4'>
 
-                <div className="bg-green-100 text-green-700 p-2">flag: {FLAG}</div>
+                <div className="bg-green-100 text-green-700 p-2">flag: {Object.values(flag)[0]}</div>
                 <button
                   type="button"
                   className='bg-purple-500 p-2 text-yellow-300'
-                  onClick={handleNext}  // Call verify function correctly
+                  onClick={handleNext}  
                 >
                   Next Task
                 </button>
