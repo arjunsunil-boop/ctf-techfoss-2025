@@ -28,7 +28,6 @@ const Task4 = () => {
 
   const handleNext = () => {
     navigate('/t2efgh');
-    window.open("https://forms.gle/He1jh5TWs1jN9ha6A");
 
   };
 
@@ -61,7 +60,7 @@ const Task4 = () => {
             className='bg-red-500 p-2 text-yellow-300'
             onClick={verify} // Fix: Pass function reference, not execute it immediately
           >
-            Submit
+            Check
           </button>
           {message}
         </div>
@@ -69,18 +68,25 @@ const Task4 = () => {
           <div className='py-8 px-2 flex gap-4'>
 
             <div className="bg-green-100 text-green-700 p-2">flag: {FLAG}</div>
-            <button
-              type="button"
-              className='bg-purple-500 p-2 text-yellow-300'
-              onClick={handleNext}  // Call verify function correctly
-            >
-              Next Task
-            </button>
+
 
 
           </div>
         )}
+        <br />
+        <div className='flex items-center gap-4'>
+        <a type="button" className="nes-btn is-success" href='https://forms.gle/He1jh5TWs1jN9ha6A' target='/blank'>Submission</a>
+        <button
+          type="button"
+          className='bg-purple-500 p-2 text-yellow-300'
+          onClick={handleNext}  // Call verify function correctly
+        >
+          Next Task
+        </button>
+        </div>
+
       </div>
+
     </div>
   );
 };
