@@ -22,7 +22,7 @@ const Task15 = () => {
       <div className="container " >
         
       <img
-      src='/public/T8-bg.gif'
+      src='/T8-bg.gif'
       alt="background"
       style={{ 
         position: "absolute",
