@@ -31,7 +31,7 @@ const Task10 = () => {
 
         <div className='py-16'>
 
-          <p className='text-yellow-500 bg-blue-700 inline p-2 mt-16'>Decode me</p>
+        <p className='text-yellow-500 bg-blue-700 inline p-2 mt-16'>Decode me</p>
 
           <div className="nes-container is-rounded is-dark py-4">
             <p>- .-. . .- ... ..- .-. . .... .- -.-. -.- . .-.</p>
