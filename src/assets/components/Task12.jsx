@@ -11,7 +11,7 @@ const Task12 = () => {
 
   var flag = JSON.parse(import.meta.env.VITE_task12);
   const verify = () => {
-    if (flag[ans]===undefined) {
+    if (flag[ans] === undefined) {
       setAns('');
       setMessage(<div className="bg-red-200 text-red-700 p-2 mt-2">Wrong Password!</div>);
       setTimeout(() => {
@@ -36,6 +36,9 @@ const Task12 = () => {
       <div id="task12bg" className="h-full">
         <div className="container">
           <br />
+          <h1 style={{ color: 'yellow' }}>Task 10</h1>
+          <br />
+        
           <p className="nes-balloon from-left nes-pointer">
             Welcome to the lab. It appears the computers are locked . To gain access, you need to enter the correct password.
             <br />
@@ -48,14 +51,14 @@ const Task12 = () => {
               type="password"
               id="answer"
               value={ans}
-              onChange={(e) => setAns(e.target.value.toLowerCase())}  
+              onChange={(e) => setAns(e.target.value.toLowerCase())}
               className='bg-white p-2 '
             />
 
             <button
               type="button"
               className='bg-red-500 p-2 text-yellow-300'
-              onClick={verify}  
+              onClick={verify}
             >
               Submit
             </button>
@@ -73,7 +76,7 @@ const Task12 = () => {
                 <button
                   type="button"
                   className='bg-purple-500 p-2 text-yellow-300'
-                  onClick={handleNext}  
+                  onClick={handleNext}
                 >
                   Next Task
                 </button>
