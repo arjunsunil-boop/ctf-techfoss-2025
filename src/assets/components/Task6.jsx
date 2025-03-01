@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { useNavigate } from 'react-router-dom'
 
 
 const Task6 = () => {
   const image = '/bgt6.png'
+  const navigate = useNavigate()
+
   return (
     <div style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
       <Navbar />
@@ -23,7 +26,7 @@ const Task6 = () => {
 
 
             </div>
-            
+
 
           </div>
         </div>
@@ -34,7 +37,7 @@ const Task6 = () => {
             <p></p>
 
             <div class="nes-container is-rounded is-dark">
-              <p>myyux://xmtwyzwq.fy/SZusq</p>
+              <p>myyux://ngg.ht/kePkIgRy</p>
             </div>
 
 
@@ -42,12 +45,9 @@ const Task6 = () => {
         </div>
         <br />
         <div className="row g-3">
-          <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
-            <a href="https://www.google.com">
-              <button type="button" className="nes-btn is-primary">Submission</button>
-            </a>
-
+          <div className='flex items-center gap-4'>
+            <a type="button" className="nes-btn is-primary" href='https://forms.gle/ooaq2gmeiLjRoWWt8' target='/blank'>Submission</a>
+            <button type='submit' className='nes-btn bg-red-300 text-red-700 ml-8 py-2 px-8' onClick={() => { navigate('/t6uvwx') }}>Next</button>
           </div>
         </div>
       </div>

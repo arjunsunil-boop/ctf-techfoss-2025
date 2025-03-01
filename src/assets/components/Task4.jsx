@@ -10,24 +10,25 @@ const Task4 = () => {
   const navigate = useNavigate();
 
 
-  var FLAG = 'techfoss<CLEVELAND>';
+  const tasks = JSON.parse(import.meta.env.VITE_task1);
 
   const verify = () => {
-    if (ans === '//www.scrambled.com') {
-      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
-      setShowNext(true);
-    } else {
+    if (tasks[ans] === undefined) {
       setAns('');
       setMessage(<div className="bg-red-200 text-red-700 p-2 mt-2">Wrong Password!</div>);
       setTimeout(() => {
-        setMessage('');
+      setMessage('');
       }, 2000);
       setShowNext(false);
+    } else {
+      setMessage(<div className="bg-green-200 text-green-700 p-2 mt-2">Correct Password!</div>);
+      setShowNext(true);
     }
   };
 
   const handleNext = () => {
-    navigate('/t5qrst');
+    navigate('/t2efgh');
+
   };
 
 
@@ -59,26 +60,33 @@ const Task4 = () => {
             className='bg-red-500 p-2 text-yellow-300'
             onClick={verify} // Fix: Pass function reference, not execute it immediately
           >
-            Submit
+            Check
           </button>
           {message}
         </div>
         {showNext && (
           <div className='py-8 px-2 flex gap-4'>
 
-            <div className="bg-green-100 text-green-700 p-2">flag: {FLAG}</div>
-            <button
-              type="button"
-              className='bg-purple-500 p-2 text-yellow-300'
-              onClick={handleNext}  // Call verify function correctly
-            >
-              Next Task
-            </button>
+            <div className="bg-green-100 text-green-700 p-2">flag: {tasks[ans]}</div>
+
 
 
           </div>
         )}
+        <br />
+        <div className='flex items-center gap-4'>
+          <a type="button" className="nes-btn is-success" href='https://forms.gle/He1jh5TWs1jN9ha6A' target='/blank'>Submission</a>
+          <button
+            type="button"
+            className='bg-purple-500 p-2 text-yellow-300'
+            onClick={handleNext}  // Call verify function correctly
+          >
+            Next Task
+          </button>
+        </div>
+
       </div>
+
     </div>
   );
 };
